@@ -218,3 +218,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project dataset - keep images local
+data/
+
+# Saved model weights
+*.pt 
+*.pth 
+
+# macOS files 
+.DS_Store
