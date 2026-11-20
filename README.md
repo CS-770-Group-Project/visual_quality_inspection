@@ -34,6 +34,11 @@ Place the image folders at:
 - data/casting_512x512/def_front/
 - data/casting_512x512/ok_front/
 
+To keep the images somewhere else, set CASTING_DATA_DIR to the folder
+that contains def_front and ok_front before starting Jupyter:
+
+   export CASTING_DATA_DIR=/path/to/casting_512x512
+
 Do not use the larger, already-augmented casting_data collection.
 Images are downloaded separately and are not stored in this repository.
 Follow the dataset source's posted terms.
@@ -63,10 +68,11 @@ CNNs use the same prepared pixels with a channel dimension.
 
 ## Running the current notebook
 
-Open setup_check.ipynb from the repository root.
+Open project.ipynb from the repository root.
 Restart the kernel and run the cells in order.
 The current notebook covers the data audit, splits, preprocessing,
-and logistic regression baseline.
+logistic regression baseline, both CNN configurations, and
+validation-based model selection.
 
 ## Evaluation rules
 
@@ -80,9 +86,9 @@ Do not retrain on validation data or adjust settings after test evaluation.
 
 ## Current status
 
-Completed: data audit, fixed splits, preprocessing, and baseline.
-Pending: two CNN runs, validation comparison, final test evaluation,
-error analysis, and final report.
+Completed: data audit, fixed splits, preprocessing, baseline,
+two CNN runs, validation comparison, and model selection.
+Pending: final test evaluation, error analysis, and final report.
 
 ## Final submission
 
