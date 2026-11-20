@@ -71,8 +71,12 @@ CNNs use the same prepared pixels with a channel dimension.
 Open project.ipynb from the repository root.
 Restart the kernel and run the cells in order.
 The current notebook covers the data audit, splits, preprocessing,
-logistic regression baseline, both CNN configurations, and
-validation-based model selection.
+logistic regression baseline, both CNN configurations,
+validation-based model selection, and the test evaluation and
+error-analysis cells.
+
+Running all cells evaluates the selected model on the test set.
+That should happen once, as the final run.
 
 ## Evaluation rules
 
@@ -87,8 +91,10 @@ Do not retrain on validation data or adjust settings after test evaluation.
 ## Current status
 
 Completed: data audit, fixed splits, preprocessing, baseline,
-two CNN runs, validation comparison, and model selection.
-Pending: final test evaluation, error analysis, and final report.
+two CNN runs, validation comparison, model selection, and the
+test evaluation and error-analysis code.
+Pending: the single final test run, filling in the discussion with
+its results, and the final report.
 
 ## Final submission
 
