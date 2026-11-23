@@ -21,7 +21,8 @@ Compare logistic regression with two small CNN configurations.
 
 5. Open the notebook and select the project's .venv as its kernel.
 
-The initial data preparation and baseline were run using Python 3.14.6.
+The final notebook run used Python 3.12.14 on macOS (arm64), with
+PyTorch on the CPU.
 Package versions are recorded in requirements.txt.
 
 ## Dataset placement

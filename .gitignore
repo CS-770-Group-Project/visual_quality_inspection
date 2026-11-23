@@ -223,8 +223,9 @@ __marimo__/
 data/
 
 # Saved model weights
-*.pt 
-*.pth 
+*.pt
+*.pth
 
-# macOS files 
+# macOS files
 .DS_Store
+.vscode/
