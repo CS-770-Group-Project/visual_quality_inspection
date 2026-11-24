@@ -106,4 +106,4 @@ The model correctly identified 114 of 117 defective castings (3 false negatives,
 
 ## AI-assistance disclosure
 
-We used Claude (Anthropic) via Claude Code to review the repository against the project guide; diagnose reproducibility issues; stub the selection-check and test-evaluation code; merge the team's notebooks; and draft layouts for the notebook explanations, discussion, limitations, conclusions, and an outline for the report, which the team then reviewed and edited. The team made the experiment decisions and reviewed, verified, and can explain all submitted code and text.
+We used Claude (Anthropic) via Claude Code to review the repository against the project guide; diagnose and suggest reproducibility issue fixes; draft the selection-check and test-evaluation code; merge the team's notebooks; and draft layouts for the notebook explanations, discussion, limitations, conclusions, and an outline for the report, which the team then reviewed and edited. The team made the experiment decisions and reviewed, verified, and can explain all submitted code and text.
