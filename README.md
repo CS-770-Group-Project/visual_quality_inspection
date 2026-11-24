@@ -67,17 +67,20 @@ resampling, and divide pixel values by 255.
 Logistic regression uses flattened pixels.
 CNNs use the same prepared pixels with a channel dimension.
 
-## Running the current notebook
+## Running the notebook
 
 Open project.ipynb from the repository root.
 Restart the kernel and run the cells in order.
-The current notebook covers the data audit, splits, preprocessing,
-logistic regression baseline, both CNN configurations,
-validation-based model selection, and the test evaluation and
-error-analysis cells.
+The notebook covers the data audit, splits, preprocessing,
+logistic regression baseline, both CNN configurations and the
+controlled experiment, validation-based model selection, the test
+evaluation and error analysis, discussion, limitations, and
+conclusions.
 
-Running all cells evaluates the selected model on the test set.
-That should happen once, as the final run.
+The selected model (CNN A) has been evaluated on the test set once,
+and the saved outputs are from that run. Re-running all cells on the
+same machine reproduces the same results. Do not change any model,
+setting, or threshold after the test evaluation.
 
 ## Evaluation rules
 
@@ -92,14 +95,27 @@ Do not retrain on validation data or adjust settings after test evaluation.
 ## Current status
 
 Completed: data audit, fixed splits, preprocessing, baseline,
-two CNN runs, validation comparison, model selection, and the
-test evaluation and error-analysis code.
-Pending: the single final test run, filling in the discussion with
-its results, and the final report.
+two CNN runs and the controlled experiment, validation comparison,
+model selection, the single test evaluation, error analysis,
+discussion, limitations, conclusions, and the report draft
+(report.md).
+
+Pending: generate report.pdf from report.md and package the
+submission ZIP.
+
+## Building the report
+
+report.md uses pandoc features (title block, figure widths, table
+captions). Its figures are in report_figures/, exported from the
+notebook outputs. With pandoc and a LaTeX engine installed:
+
+   pandoc report.md -o report.pdf --pdf-engine=xelatex
+
+Check that report.pdf is at most two pages.
 
 ## Final submission
 
-Submit one ZIP containing only:
+Name it CS770_QualityInspection_TeamName.zip and include only:
 
 - project.ipynb: combined, executed notebook with visible outputs
 - report.pdf: maximum two pages, including references and contributions
